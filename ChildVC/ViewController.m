@@ -11,10 +11,15 @@
 #import "FirstViewController.h"
 #import "SecondViewController.h"
 #import "ThirdViewController.h"
+#import "FourthViewController.h"
+#import "NaviViewController.h"
 
-#define kFirstVC @"first_VC"
-#define kSecondVC @"second_VC"
-#define kThirdVC @"third_VC"
+#define kFirstVC    @"first_VC"
+#define kSecondVC   @"second_VC"
+#define kThirdVC    @"third_VC"
+#define kFouthVaVC  @"nav_VC"
+
+#define kFourthVC   @"fourth_VC"
 
 
 @interface ViewController ()
@@ -29,6 +34,9 @@
 @property (strong, nonatomic) FirstViewController *firstVC;
 @property (strong, nonatomic) SecondViewController *secondVC;
 @property (strong, nonatomic) ThirdViewController *thirdVC;
+@property (strong, nonatomic) NaviViewController *navc;
+
+@property (strong, nonatomic) FourthViewController *fourthVC;
 
 @property (strong, nonatomic) UIViewController *currentVC;
 
@@ -50,7 +58,12 @@
         _firstVC = [self.storyboard instantiateViewControllerWithIdentifier:kFirstVC];
         _secondVC = [self.storyboard instantiateViewControllerWithIdentifier:kSecondVC];
         _thirdVC = [self.storyboard instantiateViewControllerWithIdentifier:kThirdVC];
-        [_vcsArray addObjectsFromArray:@[_firstVC,_secondVC,_thirdVC]];
+        
+        _navc = [self.storyboard instantiateViewControllerWithIdentifier:kFouthVaVC];
+        
+        _fourthVC = [self.storyboard instantiateViewControllerWithIdentifier:kFourthVC];
+        
+        [_vcsArray addObjectsFromArray:@[_firstVC,_secondVC,_thirdVC,_navc]];
         
         [self addChildViewController:_firstVC];
         [self addChildViewController:_secondVC];
@@ -111,6 +124,12 @@
         {
             _thirdVC.view.frame = self.containView.bounds;
             [self swapFromViewController:self.currentVC toViewController:_thirdVC];
+        }
+            break;
+        case 3:
+        {
+            _navc.view.frame = self.containView.bounds;
+            [self swapFromViewController:self.currentVC toViewController:_navc];
         }
             break;
         default:

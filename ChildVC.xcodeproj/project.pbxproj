@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B1204A6E1B297FA1008F6114 /* FourthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1204A6D1B297FA1008F6114 /* FourthViewController.m */; };
+		B1204A711B2981BF008F6114 /* FourthSubViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1204A701B2981BF008F6114 /* FourthSubViewController.m */; };
+		B1204A741B2982EE008F6114 /* NaviViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1204A731B2982EE008F6114 /* NaviViewController.m */; };
 		B1B9B38F1AA8099200E67EEA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1B9B38E1AA8099200E67EEA /* Foundation.framework */; };
 		B1B9B3911AA8099200E67EEA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1B9B3901AA8099200E67EEA /* CoreGraphics.framework */; };
 		B1B9B3931AA8099200E67EEA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1B9B3921AA8099200E67EEA /* UIKit.framework */; };
@@ -41,6 +44,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B1204A6C1B297FA1008F6114 /* FourthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FourthViewController.h; sourceTree = "<group>"; };
+		B1204A6D1B297FA1008F6114 /* FourthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FourthViewController.m; sourceTree = "<group>"; };
+		B1204A6F1B2981BF008F6114 /* FourthSubViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FourthSubViewController.h; sourceTree = "<group>"; };
+		B1204A701B2981BF008F6114 /* FourthSubViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FourthSubViewController.m; sourceTree = "<group>"; };
+		B1204A721B2982EE008F6114 /* NaviViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NaviViewController.h; sourceTree = "<group>"; };
+		B1204A731B2982EE008F6114 /* NaviViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NaviViewController.m; sourceTree = "<group>"; };
 		B1B9B38B1AA8099200E67EEA /* ChildVC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChildVC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1B9B38E1AA8099200E67EEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B1B9B3901AA8099200E67EEA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -100,6 +109,8 @@
 		B1B9B3821AA8099100E67EEA = {
 			isa = PBXGroup;
 			children = (
+				B1204A721B2982EE008F6114 /* NaviViewController.h */,
+				B1204A731B2982EE008F6114 /* NaviViewController.m */,
 				B1B9B3941AA8099200E67EEA /* ChildVC */,
 				B1B9B3B61AA8099400E67EEA /* ChildVCTests */,
 				B1B9B38D1AA8099200E67EEA /* Frameworks */,
@@ -145,6 +156,10 @@
 				B1B9B3CA1AA809B000E67EEA /* SecondViewController.m */,
 				B1B9B3CC1AA809BA00E67EEA /* ThirdViewController.h */,
 				B1B9B3CD1AA809BA00E67EEA /* ThirdViewController.m */,
+				B1204A6C1B297FA1008F6114 /* FourthViewController.h */,
+				B1204A6D1B297FA1008F6114 /* FourthViewController.m */,
+				B1204A6F1B2981BF008F6114 /* FourthSubViewController.h */,
+				B1204A701B2981BF008F6114 /* FourthSubViewController.m */,
 			);
 			path = ChildVC;
 			sourceTree = "<group>";
@@ -289,12 +304,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1204A6E1B297FA1008F6114 /* FourthViewController.m in Sources */,
+				B1204A711B2981BF008F6114 /* FourthSubViewController.m in Sources */,
 				B1B9B3CB1AA809B000E67EEA /* SecondViewController.m in Sources */,
 				B1B9B3A81AA8099300E67EEA /* ViewController.m in Sources */,
 				B1B9B39F1AA8099300E67EEA /* AppDelegate.m in Sources */,
 				B1B9B3CE1AA809BA00E67EEA /* ThirdViewController.m in Sources */,
 				B1B9B39B1AA8099200E67EEA /* main.m in Sources */,
 				B1B9B3D21AA830C500E67EEA /* FirstCell.m in Sources */,
+				B1204A741B2982EE008F6114 /* NaviViewController.m in Sources */,
 				B1B9B3C81AA809A700E67EEA /* FirstViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

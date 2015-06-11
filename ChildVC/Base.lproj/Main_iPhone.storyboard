@@ -26,6 +26,7 @@
                                             <segment title="First"/>
                                             <segment title="Second"/>
                                             <segment title="third"/>
+                                            <segment title="fourth"/>
                                         </segments>
                                         <connections>
                                             <action selector="changSeg:" destination="vXZ-lx-hvc" eventType="valueChanged" id="Gbm-i7-NtS"/>
@@ -60,6 +61,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-184" y="34"/>
         </scene>
         <!--First View Controller-->
         <scene sceneID="OSu-40-7Nj">
@@ -112,7 +114,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JLU-5W-kT7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="716" y="-322"/>
+            <point key="canvasLocation" x="504" y="-854.5"/>
         </scene>
         <!--Second View Controller-->
         <scene sceneID="K31-NY-bxS">
@@ -200,7 +202,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uaX-hn-X1J" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="729" y="189"/>
+            <point key="canvasLocation" x="504" y="-203"/>
         </scene>
         <!--Third View Controller-->
         <scene sceneID="mUC-bF-tY7">
@@ -245,7 +247,126 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vTu-T4-Btr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="729" y="905"/>
+            <point key="canvasLocation" x="504" y="537"/>
+        </scene>
+        <!--Navi View Controller-->
+        <scene sceneID="fnX-f7-rYB">
+            <objects>
+                <navigationController storyboardIdentifier="nav_VC" id="vfM-k9-jac" customClass="NaviViewController" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="13E-uU-AWQ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="9BV-5r-qU8" kind="relationship" relationship="rootViewController" id="gUe-J5-uOX"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gqc-YQ-mKN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="502" y="1330"/>
+        </scene>
+        <!--Fourth-->
+        <scene sceneID="vgw-Qs-3k5">
+            <objects>
+                <viewController storyboardIdentifier="fourth_VC" id="9BV-5r-qU8" customClass="FourthViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ea9-0L-gTN"/>
+                        <viewControllerLayoutGuide type="bottom" id="hsz-S9-aSK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Pxo-kN-Mo1">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jil-K2-pac">
+                                <rect key="frame" x="0.0" y="64" width="320" height="44"/>
+                                <color key="backgroundColor" red="0.13725490200000001" green="0.58823529409999997" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="gfg-Ms-yF3"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1LT-kl-UQL">
+                                <rect key="frame" x="0.0" y="524" width="320" height="44"/>
+                                <color key="backgroundColor" red="0.13225540080000001" green="0.59777582910000004" blue="0.4146121821" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="I9i-FK-KUX"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f5O-8Y-RcA">
+                                <rect key="frame" x="137" y="247" width="46" height="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="841-he-qSo" kind="push" id="WsP-P3-F1O"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="jil-K2-pac" secondAttribute="trailing" id="oZN-Qd-psN"/>
+                            <constraint firstItem="1LT-kl-UQL" firstAttribute="leading" secondItem="Pxo-kN-Mo1" secondAttribute="leading" id="rLY-vR-4Rr"/>
+                            <constraint firstItem="jil-K2-pac" firstAttribute="leading" secondItem="Pxo-kN-Mo1" secondAttribute="leading" id="slw-Rk-UTU"/>
+                            <constraint firstItem="hsz-S9-aSK" firstAttribute="top" secondItem="1LT-kl-UQL" secondAttribute="bottom" id="tPi-ju-PAk"/>
+                            <constraint firstItem="jil-K2-pac" firstAttribute="top" secondItem="ea9-0L-gTN" secondAttribute="bottom" id="wPg-PR-1NF"/>
+                            <constraint firstAttribute="trailing" secondItem="1LT-kl-UQL" secondAttribute="trailing" id="yFZ-jE-hFB"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Fourth" id="j1c-Tv-b6Y"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="H0z-mo-Pk3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1021" y="1338"/>
+        </scene>
+        <!--Fourth Sub View Controller-->
+        <scene sceneID="HJ1-DW-BYn">
+            <objects>
+                <viewController storyboardIdentifier="FourthSub" id="841-he-qSo" customClass="FourthSubViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="M9z-PU-z9C"/>
+                        <viewControllerLayoutGuide type="bottom" id="n1G-ks-ZIw"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="LWe-GH-UpK">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oBf-ZB-jUZ">
+                                <rect key="frame" x="0.0" y="64" width="320" height="44"/>
+                                <color key="backgroundColor" red="0.81960784310000001" green="0.41022563779999999" blue="0.27846277149999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="4H3-LZ-mGt"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DDP-fk-0g9">
+                                <rect key="frame" x="0.0" y="524" width="320" height="44"/>
+                                <color key="backgroundColor" red="0.72990914959999997" green="1" blue="0.46168339730000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="mSA-L7-Wz6"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xKa-v7-jzd">
+                                <rect key="frame" x="98" y="251" width="67" height="30"/>
+                                <state key="normal" title="haha">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="oBf-ZB-jUZ" secondAttribute="trailing" id="02H-8s-IGf"/>
+                            <constraint firstItem="n1G-ks-ZIw" firstAttribute="top" secondItem="DDP-fk-0g9" secondAttribute="bottom" id="5Ib-fB-Kit"/>
+                            <constraint firstItem="oBf-ZB-jUZ" firstAttribute="leading" secondItem="LWe-GH-UpK" secondAttribute="leading" id="NVL-D5-5Px"/>
+                            <constraint firstItem="oBf-ZB-jUZ" firstAttribute="top" secondItem="M9z-PU-z9C" secondAttribute="bottom" id="Vq7-vd-Lwn"/>
+                            <constraint firstItem="DDP-fk-0g9" firstAttribute="leading" secondItem="LWe-GH-UpK" secondAttribute="leading" id="ipj-Fh-8pS"/>
+                            <constraint firstAttribute="trailing" secondItem="DDP-fk-0g9" secondAttribute="trailing" id="kad-bK-yQb"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="mQu-lv-SSQ"/>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Deb-pw-MIx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1545" y="1330"/>
         </scene>
     </scenes>
     <resources>
